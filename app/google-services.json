@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1044403158158",
+    "project_id": "comfoncuppenaltysport",
+    "storage_bucket": "comfoncuppenaltysport.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044403158158:android:ebf2c69e8f5fad10761ddf",
+        "android_client_info": {
+          "package_name": "com.foncup.penalty.sport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1044403158158-h0ou91hmfpigoj7o7j8mo7qpmnhmjvli.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu3Ql7otsfqoFuSBeCw4ajxbl0tZQatxk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1044403158158-h0ou91hmfpigoj7o7j8mo7qpmnhmjvli.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

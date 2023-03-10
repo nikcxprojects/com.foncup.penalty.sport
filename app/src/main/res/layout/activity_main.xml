@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/main_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:fontFamily="@font/archivo_black"
+        android:text="PENALTY"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_40sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="@+id/main_text"
+        app:layout_constraintStart_toStartOf="@+id/main_text"
+        app:layout_constraintTop_toBottomOf="@+id/main_text"
+        app:srcCompat="@drawable/ic_cup" />
+
+    <LinearLayout
+        android:id="@+id/linearPlay"
+        android:layout_width="@dimen/_225sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:onClick="toPlay"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TextView
+            android:id="@+id/play_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_black"
+            android:text="PLAY"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_28sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearOptions"
+        android:layout_width="@dimen/_225sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:onClick="toOptions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearPlay">
+
+        <TextView
+            android:id="@+id/options_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_black"
+            android:text="OPTIONS"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_28sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearTop"
+        android:layout_width="@dimen/_225sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:onClick="toTop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearOptions"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/top_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_black"
+            android:text="TOP"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_28sdp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
